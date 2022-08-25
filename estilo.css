@@ -1,8 +1,10 @@
 body{
-  background: cyan
+  margin: 0;
+  padding: 0;
 }
 h1 {
   text-align: center;
+  height: auto;
 }
 .caixa1 {
    position: absolute;
@@ -27,7 +29,7 @@ h1 {
   position: absolute;
   width: 100%;
   height: 45px;
-  background: rgb(32, 85, 69);
+  background: black;
   top: 0;
   left: 0;
 }
@@ -42,41 +44,58 @@ li {
 }
 li a {
   display: block;
-  color: rgb(255, 255, 255);
+  color: yellow;
   padding: 14px 16px;
   text-align: center;
   text-decoration: none;
 }
 li a:hover {
-  color: yellow;
-  background: violet;
+  color: red;
+  background: white;
 }
 #image {
    width: 30%;
 }
 .boxImage {
-   display: flex;
-   justify-content: center;
-   position: absolute;
-   width: 100%;
-   height: 200px;
-   background: rgb(119, 156, 190);
-   top: 50px;
-   left: 0;
-   margin: 20px;
-   border-color: blue;
-   border-width: 20px;
-   border-style: solid;
-   padding: 20px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  background: white;
+  top: 380px;
+  left: 0;
+  margin: 20px;
+  border-color: black;
+  border-width: 20px;
+  border-style: solid;
+  padding: 160px;
 }
-.conteudo{
-  position: 100%;
+.conteudo {
+  position: absolute;
   top: 45px;
-
+  width: 100%;
 }
-#redape {
+#rodape {
+  position: relative;
   width: 100%;
   height: 35px;
+  display: flex;
+  justify-content: center;
+}
+#copy {
+  width: 90%;
   background: black;
-  color: white;
+  border-radius: 30px;
+  color: yellow;
+  display: flex;
+  justify-content: center;
+}
+.Segredos{
+  position: absolute;
+  width: 120px;
+  height: 100px;
+  top: 0;
+  right: 0;
+  z-index: 999;
 }
